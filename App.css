@@ -1,0 +1,438 @@
+/* src/App.css - Enhanced CSS for a lady-friendly, pretty theme */
+
+:root {
+  --sky-blue: #849196;        /* Soft sky blue */
+  --lime: #32cd32;            /* Lime green */
+  --lavender: #e6e6fa;        /* Light lavender for a gentle background */
+  --peach: #ffdAB9;           /* Soft peach for highlights */
+  --rose: #ff69b4;            /* Vibrant pink for accents */
+  --light-grey: #7b6464;      /* Light grey for background */
+  --white: #827878;
+  --charcoal: #333333;         /* Darker text color for contrast */
+}
+
+/* Make entire body background grey with a soft lavender overlay for prettiness */
+body {
+  background: var(--light-grey);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--charcoal);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styling (unchanged) */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===== NAVIGATION ===== */
+.navbar {
+  background: linear-gradient(135deg, var(--sky-blue), #66cdaa) !important; /* Pretty gradient */
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--peach);
+}
+
+.navbar-brand {
+  color: var(--peach) !important;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin: 5px;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Space between buttons - add margin */
+.btn + .btn {
+  margin-left: 10px;
+}
+
+/* Hover effect for all buttons - transition to yellow */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: var(--lime);
+  border-color: var(--rose);
+  color: var(--white);
+}
+
+/* Specific button styles for a lady-friendly palette - soft and pretty */
+
+/* Primary Button (e.g., Save, Submit) - Sky Blue gradient */
+.btn-primary {
+  background: linear-gradient(135deg, var(--sky-blue), #add8e6);
+  border-color: var(--peach);
+  color: var(--white);
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #66cdaa, #87cefa);
+  border-color: var(--rose);
+}
+
+/* Success Button - Lime Green */
+.btn-success {
+  background: linear-gradient(135deg, var(--lime), #7cfc00);
+  border-color: #adff2f;
+  color: var(--white);
+}
+.btn-success:hover {
+  background: linear-gradient(135deg, #32cd32, #228b22);
+}
+
+/* Warning Button - Peachy Orange */
+.btn-warning {
+  background: linear-gradient(135deg, #ffb347, #ff7f50);
+  border-color: #ffdab9;
+  color: var(--white);
+}
+.btn-warning:hover {
+  background: linear-gradient(135deg, #ffa07a, #ff6347);
+}
+
+/* Info Button - Lavender shades */
+.btn-info {
+  background: linear-gradient(135deg, #9370db, #ba55d3);
+  border-color: #dda0dd;
+  color: var(--white);
+}
+.btn-info:hover {
+  background: linear-gradient(135deg, #8a2be2, #ba55d3);
+}
+
+/* Danger Button - Rose Pink */
+.btn-danger {
+  background: linear-gradient(135deg, #ff69b4, #ff1493);
+  border-color: #ff82a9;
+  color: var(--white);
+}
+.btn-danger:hover {
+  background: linear-gradient(135deg, #ff1493, #c71585);
+}
+
+/* Special Button - Lavender Pink for highlights */
+.btn-purple {
+  background: linear-gradient(135deg, #dda0dd, #ba55d3);
+  border-color: #d8bfd8;
+  color: var(--white);
+}
+.btn-purple:hover {
+  background: linear-gradient(135deg, #ba55d3, #9370db);
+}
+
+/* Logout Button specifically styled in Rose Pink */
+.btn-logout {
+  background: linear-gradient(135deg, #ff69b4, #ff1493);
+  border-color: #ff82a9;
+  color: var(--white);
+}
+.btn-logout:hover {
+  background: linear-gradient(135deg, #ff1493, #c71585);
+}
+
+/* ===== FORMS ===== */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 2px solid var(--sky-blue);
+  padding: 12px 16px;
+  transition: all 0.3s ease;
+  background: var(--white);
+  font-size: 1rem;
+}
+.form-control:focus {
+  border-color: var(--peach);
+  box-shadow: 0 0 0 0.3rem rgba(255, 182, 193, 0.2);
+  background: #fff0f5; /* Light pink background on focus for a soft feel */
+}
+
+.form-label {
+  color: var(--sky-blue);
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* ===== TABLES ===== */
+.table {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border: 2px solid var(--peach);
+}
+
+.table th {
+  background: linear-gradient(135deg, var(--sky-blue), #add8e6);
+  color: var(--peach);
+  border: none;
+  padding: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: middle;
+}
+.table tbody tr:hover {
+  background: linear-gradient(135deg, #f0f8ff, #e0ffff);
+  transform: scale(1.01);
+  transition: all 0.2s ease;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+/* ===== CARDS ===== */
+.card {
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border: 2px solid var(--peach);
+  margin-bottom: 25px;
+  background: #fffaf0; /* Light floral background for softness */
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background: linear-gradient(135deg, var(--sky-blue), #87cefa);
+  color: var(--peach);
+  padding: 20px;
+  border-bottom: 2px solid var(--peach);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.card-body {
+  padding: 25px;
+  background: #fffaf0;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  background: linear-gradient(180deg, #add8e6, #87ceeb);
+  border-right: 3px solid var(--peach);
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar .nav-link {
+  color: var(--peach);
+  padding: 15px 20px;
+  margin: 5px 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border-left: 3px solid transparent;
+}
+.sidebar .nav-link:hover {
+  background: rgba(255, 182, 193, 0.1);
+  color: var(--pink);
+  border-left-color: var(--pink);
+  transform: translateX(5px);
+}
+.sidebar .nav-link.active {
+  background: linear-gradient(135deg, var(--peach), #ff69b4);
+  color: var(--sky-blue);
+  border-left-color: var(--sky-blue);
+  font-weight: 600;
+}
+
+/* ===== CHARTS & CONTAINERS ===== */
+.chart-container,
+.search-section {
+  background: linear-gradient(135deg, #f0f8ff, #e6f7ff);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+  border: 2px solid var(--peach);
+}
+
+/* ===== ROLE BADGES ===== */
+.role-badge {
+  background: linear-gradient(135deg, var(--sky-blue), #87cefa);
+  color: var(--peach);
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: 2px solid var(--peach);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== ROLE THEMES ===== */
+.student-theme {
+  background: linear-gradient(135deg, #87ceeb, #b0e0e6);
+  color: var(--peach);
+}
+
+.lecturer-theme {
+  background: linear-gradient(135deg, #add8e6, #87cefa);
+  color: white;
+}
+
+.prl-theme {
+  background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+  color: white;
+}
+
+.pl-theme {
+  background: linear-gradient(135deg, #98fb98, #00fa9a);
+  color: white;
+}
+
+/* ===== RATING STARS ===== */
+.rating-stars {
+  display: flex;
+  gap: 5px;
+}
+.rating-stars span {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--peach);
+}
+.rating-stars span:hover,
+.rating-stars span.active {
+  color: var(--sky-blue);
+  transform: scale(1.2);
+}
+
+/* ===== ICONS ===== */
+.icon {
+  margin-right: 10px;
+  color: var(--peach);
+  font-size: 1.2rem;
+}
+
+/* ===== DASHBOARD GRID ===== */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+.dashboard-card {
+  background: linear-gradient(135deg, #fffaf0, #f0f8ff);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  text-align: center;
+  border: 2px solid var(--peach);
+}
+.dashboard-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  border-color: var(--sky-blue);
+}
+.dashboard-card i {
+  font-size: 3rem;
+  color: var(--sky-blue);
+  margin-bottom: 15px;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-gold { color: var(--peach) !important; }
+.text-navy { color: var(--sky-blue) !important; }
+.bg-navy { background-color: var(--sky-blue) !important; }
+.bg-gold { background-color: var(--peach) !important; }
+.border-gold { border-color: var(--peach) !important; }
+.border-navy { border-color: var(--sky-blue) !important; }
+.shadow-gold { box-shadow: 0 4px 8px rgba(243, 156, 18, 0.3) !important; }
+.shadow-navy { box-shadow: 0 4px 8px rgba(44, 62, 80, 0.3) !important; }
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+  .card-body {
+    padding: 20px;
+  }
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    background: var(--light-grey);
+  }
+  .container {
+    padding: 10px;
+  }
+  .table-responsive {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--light-grey);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--sky-blue);
+  border-radius: 5px;
+  border: 2px solid var(--light-grey);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00bfff; /* Bright blue hover for scrollbar */
+}
